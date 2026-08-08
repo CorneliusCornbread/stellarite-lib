@@ -1,6 +1,6 @@
-# Muffed Mining Core
+# Stellarite Lib
 
-Muffed Mining Core is a small NeoForge mod skeleton for Minecraft 1.21.1. It provides the first vertical slice for a future progression/worldgen layer: one moon-themed test ore, item/block registration, tags, recipes, and data-driven ore generation.
+Stellarite Lib is a small NeoForge mod skeleton for Minecraft 1.21.1. It provides the first vertical slice for a future progression/worldgen layer: one moon-themed test ore, item/block registration, tags, recipes, and data-driven ore generation.
 
 ## Target environment
 
@@ -43,17 +43,17 @@ Generated resources are configured to appear under `src/generated/resources`. Ha
 
 The skeleton currently registers:
 
-- `muffed_mining:moon_test_ore`
-- `muffed_mining:raw_moon_test_ore`
-- `muffed_mining:moon_test_ore_ingot`
-- `muffed_mining:raw_moon_test_ore_block`
-- `muffed_mining:moon_test_ore_block`
+- `stellarite_lib:moon_test_ore`
+- `stellarite_lib:raw_moon_test_ore`
+- `stellarite_lib:moon_test_ore_ingot`
+- `stellarite_lib:raw_moon_test_ore_block`
+- `stellarite_lib:moon_test_ore_block`
 
 Recipes include smelting, blasting, 9-item storage blocks, and reverse unpacking recipes.
 
 ## Architecture
 
-- `MuffedMining` is the mod entry point and owns the central `MOD_ID` constant.
+- `StellariteLib` is the mod entry point and owns the central `MOD_ID` constant.
 - `registry/ModBlocks` contains block `DeferredRegister` entries.
 - `registry/ModItems` contains item/block-item `DeferredRegister` entries and creative-tab population.
 - Worldgen is data-driven through JSON resources.
@@ -77,8 +77,8 @@ A NeoForge `BiomeModifier` describes *which biomes receive* the placed feature a
 
 ## Adding another recipe
 
-Add a new JSON recipe under `src/main/resources/data/muffed_mining/recipe`. Keep pack-specific recipe removal or broad automation changes in KubeJS; use this mod for reusable base content and harder-to-express systems.
+Add a new JSON recipe under `src/main/resources/data/stellarite_lib/recipe`. Keep pack-specific recipe removal or broad automation changes in KubeJS; use this mod for reusable base content and harder-to-express systems.
 
 ## Adding a new biome modifier
 
-Add a JSON file under `src/main/resources/data/muffed_mining/neoforge/biome_modifier`. Prefer biome tags over enumerating individual biomes, and use `underground_ores` for ore features.
+Add a JSON file under `src/main/resources/data/stellarite_lib/neoforge/biome_modifier`. Prefer biome tags over enumerating individual biomes, and use `underground_ores` for ore features.

@@ -54,9 +54,9 @@ The custom mod should instead provide functionality that is difficult or impossi
 Use placeholders where necessary:
 
 ```text
-Mod name: Muffed Mining Core
-Mod ID: muffed_mining
-Package: com.example.muffedmining
+Mod name: Stellarite Lib
+Mod ID: stellarite_lib
+Package: com.example.stellaritelib
 ```
 
 The package name should be easy to change later.
@@ -99,9 +99,9 @@ Create one example ore that proves the entire pipeline works.
 Suggested example:
 
 ```text
-muffed_mining:test_ore
-muffed_mining:raw_test_ore
-muffed_mining:test_ore_block
+stellarite_lib:test_ore
+stellarite_lib:raw_test_ore
+stellarite_lib:test_ore_block
 ```
 
 The exact name may be changed to something more appropriate if needed.
@@ -129,9 +129,9 @@ Organize registration into separate classes.
 Suggested structure:
 
 ```text
-src/main/java/com/example/muffedmining/
+src/main/java/com/example/stellaritelib/
 
-    MuffedMining.java
+    StellariteLib.java
 
     registry/
         ModBlocks.java
@@ -311,9 +311,9 @@ The generated output should correspond to the normal datapack structure.
 For example:
 
 ```text
-data/muffed_mining/worldgen/configured_feature/...
-data/muffed_mining/worldgen/placed_feature/...
-data/muffed_mining/neoforge/biome_modifier/...
+data/stellarite_lib/worldgen/configured_feature/...
+data/stellarite_lib/worldgen/placed_feature/...
+data/stellarite_lib/neoforge/biome_modifier/...
 ```
 
 The exact paths must follow the NeoForge 1.21.1 API.
@@ -581,7 +581,7 @@ Use a mod-specific logger.
 Useful messages during development:
 
 ```text
-Muffed Mining initialized
+Stellarite Lib initialized
 Registered custom ores
 Registered worldgen features
 Registered biome modifiers
@@ -724,7 +724,7 @@ In particular, verify:
 The first implementation should produce a repository containing:
 
 ```text
-Muffed Mining Core
+Stellarite Lib
 |
 +-- NeoForge 1.21.1 project
 |
