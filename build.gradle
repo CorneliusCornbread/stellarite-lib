@@ -11,7 +11,7 @@ neoForge {
         server { server(); programArgument '--nogui'; systemProperty 'neoforge.enabledGameTestNamespaces', mod_id }
         data { data(); programArguments.addAll '--mod', mod_id, '--all', '--output', file('src/generated/resources/').absolutePath, '--existing', file('src/main/resources/').absolutePath }
     }
-    mods { muffed_mining { sourceSet sourceSets.main } }
+    mods { stellarite_lib { sourceSet sourceSets.main } }
 }
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 tasks.withType(ProcessResources).configureEach {
