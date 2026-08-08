@@ -1,1 +1,13 @@
-{"type":"minecraft:crafting_shapeless","category":"misc","ingredients":[{"item":"stellarite_lib:moon_test_ore_block"}],"result":{"count":9,"id":"stellarite_lib:moon_test_ore_ingot"}}
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "stellarite_lib:moon_test_ore_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "stellarite_lib:moon_test_ore_ingot"
+  }
+}

@@ -1,1 +1,12 @@
-{"type":"minecraft:smelting","category":"misc","cookingtime":200,"experience":0.7,"ingredient":{"item":"stellarite_lib:raw_moon_test_ore"},"result":{"id":"stellarite_lib:moon_test_ore_ingot"}}
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "stellarite_lib:raw_moon_test_ore"
+  },
+  "result": {
+    "id": "stellarite_lib:moon_test_ore_ingot"
+  }
+}
