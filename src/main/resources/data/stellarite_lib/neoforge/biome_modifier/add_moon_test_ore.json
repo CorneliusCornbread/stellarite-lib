@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
-  "biomes": "#minecraft:is_overworld",
+  "biomes": "#stellaris:moon_biomes",
   "features": "stellarite_lib:moon_test_ore",
   "step": "underground_ores"
 }
